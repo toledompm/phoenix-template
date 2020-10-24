@@ -1,10 +1,14 @@
 Build app image:
 ``` bash
-make build/image
+make image/build
 ```
 Build application:
 ``` bash
-make build/app <app_name>
+make app/build appName=<app_name>
+```
+Give permissions:
+``` bash
+make app/permission
 ```
 Connect to app container and open bash:
 ``` bash
