@@ -1,20 +1,23 @@
-Build app image:
-``` bash
-make image/build
+New phoenix app:
+
+```bash
+make new/app name=<app name>
 ```
-Build application:
-``` bash
-make app/build appName=<app_name>
+
+New phoenix app (--no-webpack --no-html):
+
+```bash
+make new/api name=<app name>
 ```
-Give permissions:
-``` bash
-make app/permission
-```
-Connect to app container and open bash:
-``` bash
-make app/bash
-```
-Bring containers up with:
-``` bash
+
+Bring containers up:
+
+```bash
 make up
+```
+
+Bring containers up and attatch to bash:
+
+```bash
+make up/bash
 ```

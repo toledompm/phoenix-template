@@ -1,14 +1,14 @@
+new/app:
+	mix phx.new . --app $(name) --no-webpack --no-html
+
+new/api:
+	mix phx.new . --app $(name) --no-webpack --no-html
+
 image/build:
 	docker-compose build
 
-app/build:
-	cd src && docker-compose run --rm phoenix mix phx.new . --app $(appName)
-
-app/bash:
-	docker-compose exec -it phoenix bash
-
-app/permission:
-	chmod -R 777 ./src
+up/bash:
+	docker-compose up -d && docker-compose exec -it phoenix bash
 
 up:
 	docker-compose up -d
